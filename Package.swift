@@ -6,8 +6,8 @@ import PackageDescription
 let package = Package(
     name: "KindKitInAppPurchase",
     platforms: [
-        .iOS(.v10),
-        .macOS(.v10_14)
+        .iOS(.v11),
+        .macOS(.v11)
     ],
     products: [
         .library(name: "KindKitInAppPurchase", type: .static, targets: [ "KindKitInAppPurchase" ])
@@ -16,7 +16,7 @@ let package = Package(
         .package(
             name: "KindKit",
             url: "https://github.com/KindKit/KindKit.git",
-            .upToNextMajor(from: "0.0.1")
+            .upToNextMajor(from: "0.0.33")
         ),
         .package(
             name: "TPInAppReceipt",
