@@ -4,8 +4,7 @@
 
 import Foundation
 import StoreKit
-import KindKitCore
-import KindKitObserver
+import KindKit
 
 public protocol IInAppPurchaseObserver : AnyObject {
     

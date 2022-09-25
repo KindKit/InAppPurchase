@@ -4,9 +4,8 @@
 
 import Foundation
 import StoreKit
+import KindKit
 import TPInAppReceipt
-import KindKitCore
-import KindKitObserver
 
 public protocol IInAppBuyControllerObserver : AnyObject {
     
@@ -65,7 +64,7 @@ public class InAppBuyController {
 private extension InAppBuyController {
     
     func _subscribe() {
-        self.purchase.add(observer: self, priority: .utility)
+        self.purchase.add(observer: self, priority: .internal)
     }
     
     func _unsubscribe() {

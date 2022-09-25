@@ -4,9 +4,8 @@
 
 import Foundation
 import StoreKit
+import KindKit
 import TPInAppReceipt
-import KindKitCore
-import KindKitObserver
 
 public protocol IInAppRestoreControllerObserver : AnyObject {
     

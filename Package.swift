@@ -16,7 +16,7 @@ let package = Package(
         .package(
             name: "KindKit",
             url: "https://github.com/KindKit/KindKit.git",
-            .upToNextMajor(from: "0.0.33")
+            .upToNextMajor(from: "0.2.7")
         ),
         .package(
             name: "TPInAppReceipt",
@@ -28,8 +28,7 @@ let package = Package(
         .target(
             name: "KindKitInAppPurchase",
             dependencies: [
-                .product(name: "KindKitCore", package: "KindKit"),
-                .product(name: "KindKitObserver", package: "KindKit"),
+                .product(name: "KindKit", package: "KindKit"),
                 .product(name: "TPInAppReceipt", package: "TPInAppReceipt")
             ],
             path: "Sources/InAppPurchase"

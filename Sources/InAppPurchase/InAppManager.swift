@@ -4,8 +4,8 @@
 
 import Foundation
 import StoreKit
+import KindKit
 import TPInAppReceipt
-import KindKitCore
 
 class InAppManager : NSObject {
     

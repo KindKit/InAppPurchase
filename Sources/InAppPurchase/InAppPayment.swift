@@ -4,7 +4,7 @@
 
 import Foundation
 import StoreKit
-import KindKitCore
+import KindKit
 
 public class InAppPayment {
     
